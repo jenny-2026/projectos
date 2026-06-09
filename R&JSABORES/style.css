@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(153, 155, 42, 1) 0%, rgba(199, 199, 87, 1) 50%, rgba(237, 96, 83, 1) 100%);
+}
+
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: -1;
+    top: 0;
+    position: fixed;
+}
+
+.logo {
+    height: 260px;
+    border-radius: 135px;
+}
+
+.pais {
+    height: 260px;
+    width: 100vw;
+}
+
+.resaltar {
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 4px 8px 5px #fff;
+    margin-top: 220px;
+}
+
+.navegar {
+    display: flex;
+    justify-content: right;
+    margin: 20px;
+
+
+}
+
+.link {
+    color: #fff;
+    gap: 12px;
+    text-decoration: none;
+    margin-right: 15px;
+
+}
+
+h3 {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.fit {
+    border: 3px solid #999595;
+    margin: 20px;
+    padding: 8px;
+    justify-content: left;
+}
+
+.imagem {
+    display: flex;
+    /* Alinha imagem e descrição lado a lado */
+    
+    gap: 15px;
+    /* Espaço entre a imagem e a descrição */
+    align-items: center;
+    margin: 15px;
+}
+
+.imagem img {
+    width: auto;
+    /* Define a largura da imagem */
+    height: 200px;
+    /* Mantém a proporção */
+    border-radius: 50px;
+    object-fit: cover;
+
+}
+
+.descricao {
+    display: flex;
+    /* Opcional: para controle fino */
+    flex-direction: column;
+   
+    flex: 1;
+    /* Toma o espaço restante */
+}
+
+.descricao h4 {
+    margin: 0 0 5px 0;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.descricao p {
+    margin: 0;
+    color: #201c1c;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: bolder;
+}

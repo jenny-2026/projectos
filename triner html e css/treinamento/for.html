@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinamento do for com js</title>
+</head>
+
+<body>
+    <input placeholder="insira o nome" type="text" />
+    <button onclick="buscar()">buscar</button>
+    <p></p>
+</body>
+<script>
+    let p = document.querySelector("p")
+    let input = document.querySelector("input")
+
+    const contacts = [
+        { name: "ysabel", number: "(41)566928715" },
+        { name: "maria", number: "(41)566987115" },
+        { name: "adrian", number: "(41)566987515" },
+        { name: "luis", number: "(41)5669871522" },
+    ]
+    function buscar() {
+        for(i=0; i<  contacts.length; i++){
+
+           if(input.value.toLowerCase=== contacts[i].name){
+            p.innerHTML= `contato encontrado nome: ${contacts[i].name} telf: ${contacts[i].number} `
+           break
+        }else{
+            p.innerHTML= "contacto não encontrado, tente nuevamente"
+        }
+
+
+
+
+
+        }
+    }
+</script>
+
+</html>

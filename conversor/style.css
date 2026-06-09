@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    outline: none;
+
+}
+
+body {
+    background-color: rgb(87, 68, 163);
+}
+
+.number1 {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+
+}
+
+main {
+    background: #F4F4F4;
+    width: 375px;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #7777;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+select,input {
+    background: #ffff;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 24px;
+    appearance: none;
+    /*para la flecha no aparecer*/
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #5555;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(107, 86, 120);
+    border-radius:  5px;
+    width: 100%;
+    height: 48px;
+    color: #Ffff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.5;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+section {
+    height: 327px;
+    width: 276px;
+    border: 1px solid #772FD3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moedas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math javascript</title>
+</head>
+
+<body>
+    <h1>0</h1>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+
+    <script>
+
+        let number = 0
+        let counter
+        let h1 = document.querySelector("h1")
+
+      function start(){
+        counter= setInterval(function() {
+            number++
+            h1.innerHTML=number
+            
+        },1000)
+      }
+      function stop() {
+        clearInterval(counter)
+ 
+      }
+setTimeout(function(){
+    alert ("digite start")
+}, 2000);
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
