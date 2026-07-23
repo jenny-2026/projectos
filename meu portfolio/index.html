@@ -9,6 +9,8 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
+    
     <nav class="navegacao">
         <ul class="menu">
             <li>
@@ -31,7 +33,7 @@
 
     <main id="inicio" class="cabecalho">
 
-        <img src="./eu/jenn.jpg" alt="foto-jenny" class="fotoperfil">
+        <img src="./eu/jen.jpeg" alt="foto-jenny" class="fotoperfil">
         <h1><strong>Jenny Naveda</strong></h1>
         <p class="cabeçalho-sub-titulo">Desenvolvedor web</p>
 
@@ -47,7 +49,7 @@
     </section>
 
     <section id="projeto" class="Projeto">
-        <h2 class="projeto-tituto">Meus projeto</h2>
+        <h2 class="projeto-titulo">Meus Projeto</h2>
         <div class="projeto-caixa">
 
             <div class="card">
@@ -96,21 +98,35 @@
     </section>
 
     <section id="contato" class="contatos">
-        <h2 class="contatos-titulo">contato</h2>
-        <form class="formulario-contato" id="formulario">
-            <div class="nome-fom">
-                <input placeholder="nome" class="compo-form">
+        <h2 class="contatos-titulo">CONTATOS</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-fom">
+                <input placeholder="nome" class="campo-form" id="nome">
             </div>
-            <div grupo-form>
-                <textarea class="text-form" placeholder="Digite a sua mensagem"></textarea>
+            <div class=" grupo-form">
+                <textarea class="campo-form" placeholder="Digite a sua mensagem" rows="6" id="mensagem"></textarea>
             </div>
-
+            <button type="submit" class="boton-d-form"> ENVIAR WHATSAPP</button>
         </form>
 
 
 
     </section>
+<script>
+    function enviarwhats(event){
+        event.preventDefault()
+const nome=document.getElementById('nome').value;
+const mensagem=document.getElementById('mensagem').value;
+const telefone='5541997695598'
+const texto= `ola! me chamo ${nome}, ${mensagem}`
+const msgformatada= encodeURIComponent(texto)
+const url=` https://wa.me/${telefone}?text=${msgformatada}`
+window.open(url, '_blank')
+    }
 
+
+
+</script>
 
 </body>
 
